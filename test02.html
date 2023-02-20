@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+          *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+        #register-form {
+            position: relative;
+        width: 100%;
+        min-height: 500px;
+        background-color:blueviolet ;
+        }
+        #register-form .register-body{
+       position: absolute;
+       top: 50px;
+       left: 260px;
+       right: 260px;
+       bottom: 50px;
+        background-color: #fff;
+    }
+    .heading{
+        text-align: center;
+        
+    }
+    .sub-heading {
+        text-align: center;
+        color: #bbb;
+    }
+    .form-content {
+        padding: 16px;
+    } 
+    .submit {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        background-color: blueviolet;
+        color: #fff;
+        text-align: center;
+
+    }
+    #fistname ,#lastname ,#usename ,#email ,#password {
+        margin-top: 8px;
+    }
+    </style>
+     <!-- register -->
+     <div id="register-form">
+        <div class="register-body">
+            <h2 class="heading">Register</h2>
+            <p class="sub-heading">Fill out this form</p>
+            <div class="form-content">
+                <form action="">
+                    <input type="text" placeholder="Fist Name" name="fistname" id="fistname">
+                    <input type="text" placeholder="Last name" name="lastname" id="lastname">
+                    <input type="text" placeholder="Usename" name="usename" id="usename">
+                    <input type="email" placeholder="E-mail Address" name="email" id="email">
+                    <input type="password" placeholder="Password" name="password" id="password"> <br>
+                    <input type="checkbox" required  name="checkbox" id="checkbox">I agree with the Teams and Conditions and the Privacy Policy <br>
+                    <input type="submit" class="submit" value="Create Account">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
